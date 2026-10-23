@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NK ENTERPRISES VAPI | Industrial Solutions</title>
+<meta name="description" content="NK ENTERPRISES VAPI offers industrial supplies, solvents and chemicals, industrial painting, epoxy flooring, manpower, pipes, fittings and engineering supplies.">
+<style>
+:root{--navy:#102b46;--navy2:#183e5d;--yellow:#f4c542;--red:#d44747;--ink:#243447;--muted:#627387;--pale:#f2f7fa;--line:#dce5eb;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6}a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+header{background:var(--navy);color:white;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px #0002}.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px 0}.brand{font-weight:800;font-size:21px;letter-spacing:.4px}.brand small{display:block;color:var(--yellow);font-size:11px;letter-spacing:2px}.navlinks{display:flex;gap:17px;flex-wrap:wrap}.navlinks a{text-decoration:none;font-size:14px;font-weight:700}.navlinks a:hover{color:var(--yellow)}
+.hero{background:linear-gradient(110deg,#102b46f5,#183e5de8),url('https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1600&q=80') center/cover;color:white;padding:88px 0 78px}.eyebrow{color:var(--yellow);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:12px}.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.12;max-width:800px;margin:12px 0}.hero p{max-width:720px;color:#e2eaf0;font-size:18px}.btn{display:inline-block;border:0;border-radius:6px;padding:13px 18px;text-decoration:none;font-weight:800;cursor:pointer;font-size:14px}.btn-yellow{background:var(--yellow);color:var(--navy)}.btn-outline{border:1px solid #ffffff99;color:white;background:transparent}.btn-blue{background:var(--navy);color:white}.section{padding:58px 0}.section h2{font-size:clamp(26px,3vw,36px);line-height:1.2;margin:8px 0 14px;color:var(--navy)}.intro{max-width:760px;color:var(--muted)}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}.about-panel{background:var(--pale);padding:28px;border-radius:12px;border:1px solid var(--line)}.pill{display:inline-block;background:#eaf3f9;color:var(--navy);padding:6px 10px;border-radius:99px;font-size:12px;font-weight:700;margin:4px 4px 0 0}
+.services{background:var(--pale)}
+.service-card{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.service-card img{display:block;width:100%;height:175px;object-fit:cover;background:#dce5eb}
+.service-content{padding:19px;display:flex;flex-direction:column;align-items:flex-start;flex:1}
+.service-content ul{padding-left:18px;margin:8px 0 17px;color:var(--muted);font-size:13px}
+.service-content li{margin:4px 0}
+.service-content .btn{margin-top:auto;font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:25px}.card{background:white;border:1px solid var(--line);border-radius:11px;padding:21px;box-shadow:0 3px 12px #102b4608}.card .num{width:39px;height:39px;border-radius:9px;background:#fff3c5;color:var(--navy);display:grid;place-items:center;font-weight:900;margin-bottom:14px}.card h3{font-size:17px;line-height:1.3;color:var(--navy);margin:0 0 9px}.card p{font-size:14px;color:var(--muted);margin:0}.band{background:var(--navy);color:white;padding:28px;border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:30px}.band h3{margin:0 0 5px}.band p{margin:0;color:#d7e3ec}
+.enquiry-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:28px;align-items:start}.contact-list{display:grid;gap:13px;margin-top:20px}.contact-item{display:flex;gap:13px;align-items:flex-start;background:var(--pale);border:1px solid var(--line);border-radius:9px;padding:15px}.contact-icon{background:var(--navy);color:var(--yellow);border-radius:8px;padding:10px;font-weight:900}.contact-item strong{display:block;color:var(--navy)}.contact-item a{overflow-wrap:anywhere}.form-box{border:1px solid var(--line);border-radius:12px;padding:25px;box-shadow:0 5px 20px #102b460b}.form-box h3{margin-top:0;color:var(--navy)}form{display:grid;gap:13px}.two{display:grid;grid-template-columns:1fr 1fr;gap:13px}label{font-size:13px;font-weight:800;color:var(--navy)}input,select,textarea{display:block;width:100%;margin-top:5px;padding:12px;border:1px solid #bdcbd6;border-radius:6px;font:inherit;background:white;color:var(--ink)}textarea{resize:vertical}input:focus,select:focus,textarea:focus{outline:2px solid #8ec9ec;border-color:#1769aa}.status{display:none;padding:14px;background:#eef8f2;border:1px solid #b9e1c8;border-radius:8px;color:#17633c;font-size:14px}.note{font-size:12px;color:var(--muted)}
+footer{background:#0b2034;color:#dce7f0;padding:30px 0}footer .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer strong{color:white}.small-links{display:flex;gap:14px;flex-wrap:wrap}.small-links a{color:#dce7f0;text-decoration:none}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.about-grid,.enquiry-grid{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column}.navlinks{gap:12px}.hero{padding:62px 0}.band{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.two{grid-template-columns:1fr}.section{padding:42px 0}.form-box{padding:18px}.hero p{font-size:16px}}
+
+.item-picker{width:100%;margin:4px 0 16px;border:1px solid var(--line);border-radius:8px;background:#f8fbfd}
+.item-picker summary{cursor:pointer;padding:10px 12px;font-size:13px;font-weight:800;color:var(--navy);list-style-position:inside}
+.item-picker .picker-body{padding:0 12px 12px}
+.item-picker .item-group-title{font-size:12px;font-weight:800;color:var(--navy);margin:10px 0 5px}
+.item-picker label.item-option{display:flex;align-items:flex-start;gap:8px;font-size:12px;font-weight:500;color:var(--ink);margin:6px 0;cursor:pointer}
+.item-picker input[type=checkbox]{width:auto;margin:2px 0 0;accent-color:var(--navy);flex-shrink:0}
+.item-picker .select-hint{font-size:11px;color:var(--muted);margin:8px 0 0}
+
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a href="#home" style="text-decoration:none;color:white"><div class="brand">NK ENTERPRISES<small>VAPI · INDUSTRIAL SOLUTIONS</small></div></a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Our Services</a><a href="#enquiry">Enquiry</a><a href="#contact">Contact Us</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="home"><div class="wrap">
+  <div class="eyebrow">Industrial supply & services</div>
+  <h1>Your Trusted Partner for Industrial Solutions</h1>
+  <p>Industrial supplies, chemical products, painting works, manpower services and engineering materials for your business requirements.</p>
+  <a class="btn btn-yellow" href="#enquiry">REQUEST A QUOTE</a>
+  <a class="btn btn-outline" href="#services">EXPLORE SERVICES</a>
+</div></section>
+<section class="section" id="about"><div class="wrap about-grid">
+  <div><div class="eyebrow">About our company</div><h2>Reliable support for industrial requirements</h2>
+    <p class="intro">NK ENTERPRISES VAPI aims to support industrial and commercial customers with supply and service solutions based on their project requirements. Contact us to discuss your product specifications, quantity, work scope and delivery needs.</p>
+    <span class="pill">Customer-focused</span><span class="pill">Industrial requirements</span><span class="pill">Quotation on enquiry</span>
+  </div>
+  <div class="about-panel"><h3 style="margin-top:0;color:var(--navy)">What we support</h3>
+    <p>✓ Industrial products and consumables</p><p>✓ Painting and coating work enquiries</p><p>✓ Manpower and contract service enquiries</p><p>✓ Piping, fittings and maintenance supplies</p>
+    <p class="note">Product availability, specifications and service scope are confirmed at quotation stage.</p>
+  </div>
+</div></section>
+<section class="section services" id="services"><div class="wrap">
+  <div class="eyebrow">One point for multiple requirements</div><h2>Our Services & Industrial Supplies</h2>
+  <p class="intro">Select any service below, then use the enquiry form to tell us what you need.</p>
+  <div class="grid service-grid">
+    <article class="card service-card">
+      <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22900%22%20height%3D%22420%22%20viewBox%3D%220%200%20900%20420%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22bg%22%20x2%3D%220%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23eaf4fb%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23c8dce9%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient%20id%3D%22drum%22%20x2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23176a9b%22%2F%3E%3Cstop%20offset%3D%22.5%22%20stop-color%3D%22%233b9bc8%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2312527a%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22900%22%20height%3D%22420%22%20fill%3D%22url%28%23bg%29%22%2F%3E%3Cpath%20d%3D%22M0%20340H900V420H0Z%22%20fill%3D%22%23b8cbd7%22%2F%3E%3Cg%20transform%3D%22translate%28120%2058%29%22%3E%3Cg%3E%3Crect%20x%3D%220%22%20y%3D%2235%22%20width%3D%22150%22%20height%3D%22250%22%20rx%3D%2218%22%20fill%3D%22url%28%23drum%29%22%2F%3E%3Cellipse%20cx%3D%2275%22%20cy%3D%2238%22%20rx%3D%2275%22%20ry%3D%2217%22%20fill%3D%22%2365b7dc%22%2F%3E%3Cpath%20d%3D%22M8%2092H142M8%20235H142%22%20stroke%3D%22%23d5edf8%22%20stroke-width%3D%228%22%20opacity%3D%22.7%22%2F%3E%3Crect%20x%3D%2242%22%20y%3D%22128%22%20width%3D%2266%22%20height%3D%2264%22%20rx%3D%225%22%20fill%3D%22%23fff%22%2F%3E%3Ctext%20x%3D%2275%22%20y%3D%22151%22%20text-anchor%3D%22middle%22%20font-size%3D%2213%22%20font-weight%3D%22bold%22%20fill%3D%22%23164766%22%3ESOLVENT%3C%2Ftext%3E%3Ctext%20x%3D%2275%22%20y%3D%22172%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20fill%3D%22%23164766%22%3EINDUSTRIAL%3C%2Ftext%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate%28190%2055%29%22%3E%3Crect%20width%3D%22150%22%20height%3D%22230%22%20y%3D%2255%22%20rx%3D%2217%22%20fill%3D%22%23e6edf1%22%20stroke%3D%22%237c96a7%22%20stroke-width%3D%225%22%2F%3E%3Cellipse%20cx%3D%2275%22%20cy%3D%2256%22%20rx%3D%2275%22%20ry%3D%2216%22%20fill%3D%22%23f9fcff%22%20stroke%3D%22%237c96a7%22%20stroke-width%3D%224%22%2F%3E%3Cpath%20d%3D%22M8%20110H142M8%20205H142%22%20stroke%3D%22%238da5b3%22%20stroke-width%3D%227%22%2F%3E%3Crect%20x%3D%2231%22%20y%3D%22130%22%20width%3D%2288%22%20height%3D%2248%22%20rx%3D%224%22%20fill%3D%22%23fff%22%2F%3E%3Ctext%20x%3D%2275%22%20y%3D%22150%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-weight%3D%22bold%22%20fill%3D%22%2335586d%22%3ECHEMICAL%3C%2Ftext%3E%3Ctext%20x%3D%2275%22%20y%3D%22166%22%20text-anchor%3D%22middle%22%20font-size%3D%2210%22%20fill%3D%22%2335586d%22%3ESUPPLY%3C%2Ftext%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate%28385%2095%29%22%3E%3Cpath%20d%3D%22M0%2040Q0%2020%2020%2020H100Q120%2020%20120%2040V190Q120%20210%20100%20210H20Q0%20210%200%20190Z%22%20fill%3D%22%23e7b94f%22%20stroke%3D%22%239b7827%22%20stroke-width%3D%224%22%2F%3E%3Crect%20x%3D%2210%22%20y%3D%2275%22%20width%3D%22100%22%20height%3D%2255%22%20rx%3D%225%22%20fill%3D%22%23fff5d8%22%2F%3E%3Ctext%20x%3D%2260%22%20y%3D%2298%22%20text-anchor%3D%22middle%22%20font-size%3D%2213%22%20font-weight%3D%22bold%22%20fill%3D%22%23725316%22%3ECHEMICAL%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22116%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20fill%3D%22%23725316%22%3EDRUM%3C%2Ftext%3E%3Cpath%20d%3D%22M22%2020V5H98V20%22%20fill%3D%22none%22%20stroke%3D%22%239b7827%22%20stroke-width%3D%226%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3Ctext%20x%3D%22450%22%20y%3D%22385%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2223%22%20font-weight%3D%22bold%22%20fill%3D%22%23164766%22%3EINDUSTRIAL%20SOLVENTS%20%26amp%3B%20CHEMICALS%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Industrial chemical drums and containers" loading="lazy">
+      <div class="service-content"><h3>Solvents & Chemicals</h3><p>Industrial solvents and chemical products, subject to availability and specifications.</p><ul><li>Product / chemical name</li><li>Grade and required specification</li><li>Quantity, packing and delivery location</li></ul><button class="btn btn-blue choose-service" data-service="Solvents & Chemicals">Enquire for Chemicals</button></div>
+    </article>
+    <article class="card service-card">
+      <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80" alt="Industrial worker performing metalwork and surface work" loading="lazy">
+      <div class="service-content"><h3>Industrial Painting & Epoxy Flooring</h3><p>Industrial painting, surface preparation, coating and flooring work.</p><ul><li>Work location and site conditions</li><li>Area in sq. ft. or dimensions</li><li>Surface type, coating system and schedule</li></ul><button class="btn btn-blue choose-service" data-service="Industrial Painting & Epoxy Flooring">Enquire for Painting</button></div>
+    </article>
+    <article class="card service-card">
+      <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80" alt="Industrial engineering team at work" loading="lazy">
+      <div class="service-content"><h3>Industrial Manpower</h3><p>Manpower and contract workforce enquiries for industrial projects.</p><ul><li>Trade / job role and skill level</li><li>Number of workers and shift pattern</li><li>Project duration, site and start date</li></ul><button class="btn btn-blue choose-service" data-service="Industrial Manpower">Enquire for Manpower</button></div>
+    </article>
+    <article class="card service-card">
+      <img src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=800&q=80" alt="Industrial pipes and metal fittings" loading="lazy">
+      <div class="service-content"><h3>Pipes, Fittings & Flanges</h3><p>MS, SS, GI and plastic piping products and accessories, according to requirement.</p><ul><li>Material grade and pipe size</li><li>Schedule / pressure rating and standard</li><li>Quantity, dimensions and delivery point</li></ul><button class="btn btn-blue choose-service" data-service="Pipes, Fittings & Flanges">Enquire for Pipes & Fittings</button></div>
+    </article>
+    <article class="card service-card">
+      <img src="https://images.unsplash.com/photo-1581092335878-2d9ff86ca2bf?auto=format&fit=crop&w=800&q=80" alt="Industrial mechanical equipment" loading="lazy">
+      <div class="service-content"><h3>Valves, Pumps & Mechanical Spares</h3><p>Valves, pumps, bearings, couplings, mechanical seals, hoses and related spares.</p><ul><li>Equipment / item make and model</li><li>Size, material and pressure rating</li><li>Part number, quantity and application</li></ul><button class="btn btn-blue choose-service" data-service="Valves, Pumps & Mechanical Spares">Enquire for Mechanical Items</button></div>
+    </article>
+    <article class="card service-card">
+      <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22900%22%20height%3D%22420%22%20viewBox%3D%220%200%20900%20420%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22bg2%22%20x2%3D%220%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23edf5fa%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23cadce8%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient%20id%3D%22steel%22%20x2%3D%221%22%3E%3Cstop%20stop-color%3D%22%238ba2b0%22%2F%3E%3Cstop%20offset%3D%22.5%22%20stop-color%3D%22%23f8fcff%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23748b9b%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22900%22%20height%3D%22420%22%20fill%3D%22url%28%23bg2%29%22%2F%3E%3Cpath%20d%3D%22M0%20335H900V420H0Z%22%20fill%3D%22%23b9cbd6%22%2F%3E%3Cg%20transform%3D%22translate%28115%2055%29%22%3E%3Cg%20transform%3D%22translate%280%2040%29%22%3E%3Crect%20x%3D%2248%22%20y%3D%22100%22%20width%3D%22180%22%20height%3D%2222%22%20rx%3D%225%22%20fill%3D%22url%28%23steel%29%22%2F%3E%3Ccircle%20cx%3D%22138%22%20cy%3D%2265%22%20r%3D%2267%22%20fill%3D%22url%28%23steel%29%22%20stroke%3D%22%23526d7e%22%20stroke-width%3D%227%22%2F%3E%3Ccircle%20cx%3D%22138%22%20cy%3D%2265%22%20r%3D%2252%22%20fill%3D%22%23fff%22%20stroke%3D%22%23607d8d%22%20stroke-width%3D%224%22%2F%3E%3Cpath%20d%3D%22M138%2065L170%2034%22%20stroke%3D%22%23c53e36%22%20stroke-width%3D%225%22%20stroke-linecap%3D%22round%22%2F%3E%3Ccircle%20cx%3D%22138%22%20cy%3D%2265%22%20r%3D%226%22%20fill%3D%22%23344f60%22%2F%3E%3Cpath%20d%3D%22M101%2037L108%2043M123%2017L126%2027M150%2017L148%2027M175%2038L168%2044M184%2066L174%2066M92%2066L102%2066%22%20stroke%3D%22%23526d7e%22%20stroke-width%3D%224%22%2F%3E%3Ctext%20x%3D%22138%22%20y%3D%2292%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-weight%3D%22bold%22%20fill%3D%22%2329495c%22%3EPRESSURE%3C%2Ftext%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate%28300%200%29%22%3E%3Crect%20x%3D%2235%22%20y%3D%2272%22%20width%3D%22115%22%20height%3D%22190%22%20rx%3D%2214%22%20fill%3D%22url%28%23steel%29%22%20stroke%3D%22%23526d7e%22%20stroke-width%3D%225%22%2F%3E%3Crect%20x%3D%2251%22%20y%3D%2288%22%20width%3D%2283%22%20height%3D%22115%22%20rx%3D%228%22%20fill%3D%22%23193d52%22%2F%3E%3Crect%20x%3D%2262%22%20y%3D%22103%22%20width%3D%2261%22%20height%3D%2240%22%20rx%3D%224%22%20fill%3D%22%23b4e8d0%22%2F%3E%3Ctext%20x%3D%2292%22%20y%3D%22128%22%20text-anchor%3D%22middle%22%20font-size%3D%2220%22%20font-weight%3D%22bold%22%20fill%3D%22%23164c43%22%3E25.4%3C%2Ftext%3E%3Ctext%20x%3D%2292%22%20y%3D%22163%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20fill%3D%22%23fff%22%3E%C2%B0C%20%20TEMP%3C%2Ftext%3E%3Ccircle%20cx%3D%2292%22%20cy%3D%22228%22%20r%3D%229%22%20fill%3D%22%234a9b79%22%2F%3E%3Cpath%20d%3D%22M92%2072V45H140V20%22%20fill%3D%22none%22%20stroke%3D%22%23526d7e%22%20stroke-width%3D%229%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate%28510%2045%29%22%3E%3Cpath%20d%3D%22M0%2035H80V80H125V190H80V235H0V190H-45V80H0Z%22%20fill%3D%22url%28%23steel%29%22%20stroke%3D%22%23526d7e%22%20stroke-width%3D%225%22%2F%3E%3Ccircle%20cx%3D%2240%22%20cy%3D%22135%22%20r%3D%2243%22%20fill%3D%22%23eaf5fb%22%20stroke%3D%22%23526d7e%22%20stroke-width%3D%225%22%2F%3E%3Cpath%20d%3D%22M40%20135L63%20107%22%20stroke%3D%22%23c53e36%22%20stroke-width%3D%225%22%20stroke-linecap%3D%22round%22%2F%3E%3Ccircle%20cx%3D%2240%22%20cy%3D%22135%22%20r%3D%226%22%20fill%3D%22%2329495c%22%2F%3E%3Ctext%20x%3D%2240%22%20y%3D%22158%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-weight%3D%22bold%22%20fill%3D%22%2329495c%22%3EFLOW%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3Ctext%20x%3D%22450%22%20y%3D%22385%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2223%22%20font-weight%3D%22bold%22%20fill%3D%22%23164766%22%3EINDUSTRIAL%20INSTRUMENTATION%20%26amp%3B%20UTILITIES%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Industrial measurement and instrumentation equipment" loading="lazy">
+      <div class="service-content"><h3>Instrumentation & Utilities</h3><p>Pressure and temperature gauges, flow meters, tubing and utility accessories.</p><ul><li>Instrument type and measurement range</li><li>Connection size and process compatibility</li><li>Accuracy, output and quantity</li></ul><button class="btn btn-blue choose-service" data-service="Instrumentation & Utilities">Enquire for Instrumentation</button></div>
+    </article>
+    <article class="card service-card">
+      <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80" alt="Metal fasteners and industrial consumables" loading="lazy">
+      <div class="service-content"><h3>Fasteners & Consumables</h3><p>Bolts, nuts, washers, PTFE tape, gaskets, packing and sealing materials.</p><ul><li>Item type, material and dimensions</li><li>Thread / standard and grade</li><li>Quantity and packing requirement</li></ul><button class="btn btn-blue choose-service" data-service="Fasteners & Consumables">Enquire for Consumables</button></div>
+    </article>
+    <article class="card service-card">
+      <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Industrial safety equipment and worksite" loading="lazy">
+      <div class="service-content"><h3>Industrial Safety Products</h3><p>PPE, safety helmets, gloves, goggles, safety shoes and other safety supplies.</p><ul><li>Product type and safety standard</li><li>Sizes, material and protection rating</li><li>Quantity and delivery date</li></ul><button class="btn btn-blue choose-service" data-service="Industrial Safety Products">Enquire for Safety Products</button></div>
+    </article>
+  </div>
+  <div class="band"><div><h3>Need industrial products or services?</h3><p>Share your requirement and request a quotation.</p></div><a class="btn btn-yellow" href="#enquiry">SEND AN ENQUIRY</a></div>
+</div></section>
+<section class="section" id="enquiry"><div class="wrap enquiry-grid">
+  <div><div class="eyebrow">Let’s discuss your requirement</div><h2>Customer Enquiry</h2><p class="intro">Fill in the details in this demo form. The simulator will show a preview of your enquiry before you email it. Include item specifications, quantity and required date where applicable.</p>
+    <div class="contact-list">
+      <div class="contact-item"><div class="contact-icon">01</div><div><strong>Quick response</strong><span class="note">Share your product or service requirement.</span></div></div>
+      <div class="contact-item"><div class="contact-icon">02</div><div><strong>Quotation details</strong><span class="note">Mention quantity, location and scope of work.</span></div></div>
+      <div class="contact-item"><div class="contact-icon">03</div><div><strong>Contact directly</strong><span class="note">Call or WhatsApp the business number below.</span></div></div>
+    </div>
+  </div>
+  <div class="form-box"><h3>Request a Quote</h3><p class="note">Har service ke liye alag “Enquire” button se yahan aakar relevant service select ho jayegi. Technical details bharne se accurate quotation dene mein madad milegi.</p>
+    <form id="enquiryForm">
+      <div class="two">
+        <label>Customer / Company Name *<input id="customer" name="customer" required placeholder="Enter your name"></label>
+        <label>Mobile Number *<input id="phone" name="phone" required type="tel" pattern="[0-9+() -]{8,20}" placeholder="Enter mobile number"></label>
+      </div>
+      <div class="two">
+        <label>Email Address<input id="email" name="email" type="email" placeholder="name@example.com"></label>
+        <label>Project Location<input id="location" name="location" value="Vapi, Gujarat" placeholder="City / industrial area"></label>
+      </div>
+      <label>Required Service *
+        <select id="service" name="service" required>
+          <option value="">Select a service</option>
+          <option>Solvents & Chemicals</option><option>Industrial Painting & Epoxy Flooring</option><option>Industrial Manpower</option><option>Pipes, Fittings & Flanges</option><option>Valves, Pumps & Mechanical Spares</option><option>Instrumentation & Utilities</option><option>Fasteners & Consumables</option><option>Industrial Safety Products</option><option>Multiple Services / Other</option>
+        </select>
+      </label>
+      <label>Item / Product Name (if applicable)<input id="itemName" name="itemName" placeholder="e.g. SS 304 elbow, ball valve, solvent name"></label>
+      <div class="two">
+        <label>Quantity / Area / Manpower<input id="quantity" name="quantity" placeholder="e.g. 25 pieces, 500 sq. ft., 10 workers"></label>
+        <label>Required By / Project Date<input id="requiredDate" name="requiredDate" type="date"></label>
+      </div>
+      <label>Technical Specification / Requirement Details *<textarea id="details" name="details" rows="5" required placeholder="Mention size, grade, rating, standard, make/model, work scope, site conditions or other requirements"></textarea></label>
+      <label>Attach/Share a specification or drawing (optional)<input id="specLink" name="specLink" type="url" placeholder="Paste a shareable file link (optional)"></label>
+      <button class="btn btn-blue" type="submit">PREVIEW ENQUIRY</button>
+      <div class="status" id="status" role="status"></div>
+      <div id="emailActions" style="display:none;gap:10px;flex-wrap:wrap">
+        <a class="btn btn-yellow" id="emailButton" href="#">OPEN EMAIL TO SEND</a>
+        <button class="btn btn-blue" id="resetButton" type="button">RESET FORM</button>
+      </div>
+      <p class="note">Demo note: Previewing does not automatically send or store your enquiry. Use “Open Email to Send” to open your email app with the details filled in.</p>
+    </form>
+  </div>
+</div></section>
+<section class="section services" id="contact"><div class="wrap">
+  <div class="eyebrow">Get in touch</div><h2>Contact Us</h2><p class="intro">Contact NK ENTERPRISES VAPI for industrial supplies, painting works, manpower and engineering product enquiries.</p>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+    <div class="card"><div class="num">☎</div><h3>Mobile Number</h3><p><a href="tel:+919426850018">9426850018</a></p><p style="margin-top:13px"><a class="btn btn-blue" href="https://wa.me/919426850018" target="_blank" rel="noopener">WhatsApp Us</a></p></div>
+    <div class="card"><div class="num">✉</div><h3>Business Email</h3><p><a href="mailto:nkenterprises.vapi@gmail.com">nkenterprises.vapi@gmail.com</a></p><p style="margin-top:13px"><a class="btn btn-blue" href="mailto:nkenterprises.vapi@gmail.com">Send Email</a></p></div>
+    <div class="card"><div class="num">⌖</div><h3>Location</h3><p>Vapi, Gujarat, India</p><p style="margin-top:13px"><a class="btn btn-blue" href="https://www.google.com/maps/search/?api=1&query=Vapi%2C%20Gujarat%2C%20India" target="_blank" rel="noopener">View on Maps</a></p></div>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap foot"><div><strong>NK ENTERPRISES VAPI</strong><br><span class="note" style="color:#c5d3df">Industrial Supplies · Painting Works · Manpower Services</span></div><div class="small-links"><a href="#home">Home</a><a href="#services">Services</a><a href="#enquiry">Enquiry</a><a href="#contact">Contact Us</a></div><div class="note" style="color:#c5d3df">© 2026 NK ENTERPRISES. All rights reserved.</div></div></footer>
+<script>
+const form=document.getElementById('enquiryForm');
+const statusBox=document.getElementById('status');
+const emailActions=document.getElementById('emailActions');
+const emailButton=document.getElementById('emailButton');
+const resetButton=document.getElementById('resetButton');
+const serviceSelect=document.getElementById('service');
+const serviceButtons=document.querySelectorAll('.choose-service');
+
+// Detailed item catalogue: customers can expand a service and tick specific items.
+const itemCatalogue = {
+  "Solvents & Chemicals": {
+    "Common industrial solvents": ["Acetone", "Methanol", "Ethanol / IPA", "Toluene", "Xylene", "Ethyl Acetate", "Butyl Acetate", "Methylene Chloride (DCM)", "Methyl Ethyl Ketone (MEK)", "DMF", "NMP", "Hexane", "Heptane", "Cyclohexanone", "THF"],
+    "Other chemicals (subject to availability)": ["Caustic Soda", "Soda Ash", "Hydrochloric Acid (HCl)", "Sulphuric Acid (H₂SO₄)", "Phosphoric Acid", "Acetic Acid", "Hydrogen Peroxide", "Sodium Hypochlorite", "Ammonia Solution", "Industrial cleaning chemicals", "Process chemicals – specify name", "Other chemical – specify name"],
+    "Details to specify": ["Purity / grade", "CAS number (if known)", "Packing: drum / carboy / tanker / other", "Quantity and delivery schedule", "SDS / COA requirement"]
+  },
+  "Industrial Painting & Epoxy Flooring": {
+    "Building and wall painting": ["Interior wall painting", "Exterior wall painting", "Ceiling painting", "Putty and wall surface preparation", "Primer application", "Repainting / maintenance painting"],
+    "Industrial painting": ["Factory shed / structural steel painting", "Pipe and pipeline painting", "Tank / vessel exterior painting", "Chimney / stack painting", "Machinery and equipment painting", "Handrail, platform and staircase painting", "Roof painting / protective coating", "Anti-corrosive painting", "High-temperature coating", "Aluminium paint application"],
+    "Flooring and surface preparation": ["Epoxy flooring", "PU flooring", "Floor marking / line marking", "Concrete floor repair", "Shot blasting / grinding", "Rust removal / scraping", "Waterproofing coating"],
+    "Details to specify": ["Interior / exterior and surface type", "Area in sq. ft. or dimensions", "Height / scaffolding requirement", "Coating brand / system / number of coats", "Site location and target completion date"]
+  },
+  "Industrial Manpower": {
+    "Skilled trades": ["Welder", "Fitter", "Fabricator", "Pipe fitter", "Electrician", "Instrument technician", "Painter / blaster", "Mason", "Carpenter", "Rigger", "Crane / forklift operator (licensed)"],
+    "General and technical workforce": ["Helper / unskilled worker", "Production operator", "Plant operator", "Mechanical technician", "Maintenance technician", "Housekeeping staff", "Warehouse / material handler", "Safety officer / safety supervisor", "Supervisor / site in-charge"],
+    "Details to specify": ["Number of persons by role", "Qualification / experience / certifications", "Day / night shift and working hours", "Contract duration and start date", "Site location, PPE and statutory requirements"]
+  },
+  "Pipes, Fittings & Flanges": {
+    "Pipes and tubes": ["MS / carbon steel pipe", "SS 304 pipe", "SS 316 / 316L pipe", "GI pipe", "HDPE / PVC / CPVC pipe", "Seamless pipe", "ERW pipe", "Tube – specify material"],
+    "Fittings": ["Elbow 45° / 90°", "Tee / reducing tee", "Reducer concentric / eccentric", "Socket / coupling / union", "Nipple", "Pipe bend", "End cap / plug", "Hose and hose fittings"],
+    "Flanges and gaskets": ["Slip-on flange", "Weld-neck flange", "Blind flange", "Threaded flange", "Gasket – spiral wound / PTFE / rubber", "Stud bolts and flange kit"],
+    "Details to specify": ["Material grade and standard", "Nominal bore / size and schedule / thickness", "Pressure class / rating", "End connection and quantity", "MTC / test certificate requirement"]
+  },
+  "Valves, Pumps & Mechanical Spares": {
+    "Valves": ["Ball valve", "Gate valve", "Globe valve", "Butterfly valve", "Check / NRV valve", "Plug valve", "Diaphragm valve", "Needle valve", "Control valve", "Safety / pressure relief valve", "Solenoid valve"],
+    "Pumps and accessories": ["Centrifugal pump", "Chemical process pump", "Magnetic drive pump", "Dosing / metering pump", "Diaphragm pump", "Mechanical seal", "Gland packing", "Impeller / shaft / bearing"],
+    "Mechanical spares": ["Gearbox", "Coupling", "Bearing", "Motor", "Strainer", "Expansion joint", "Mechanical seal kit", "Fabricated / machined component"],
+    "Details to specify": ["Make / model and equipment tag", "Size, material and pressure rating", "Flow / head / power where applicable", "Connection type and quantity", "Photo / nameplate / drawing link"]
+  },
+  "Instrumentation & Utilities": {
+    "Measurement instruments": ["Pressure gauge", "Pressure transmitter", "Temperature gauge", "RTD / thermocouple", "Flow meter", "Level gauge / level transmitter", "Vacuum gauge", "Differential pressure gauge", "pH / conductivity meter"],
+    "Control and utility items": ["Control valve accessories", "Solenoid valve", "Pneumatic tubing and fittings", "Instrument air filter regulator", "Cable / junction box", "Utility hose", "Steam trap", "Sight glass", "Utility manifold / header accessories"],
+    "Details to specify": ["Range and units", "Process connection / size", "Wetted material and process compatibility", "Output / signal and accuracy", "Make, model, calibration and quantity"]
+  },
+  "Fasteners & Consumables": {
+    "Fasteners": ["Hex bolt", "Stud bolt", "Nut", "Washer", "Anchor fastener", "Threaded rod", "U-bolt", "SS fasteners", "High-tensile fasteners"],
+    "Sealing and maintenance consumables": ["PTFE tape", "PTFE sheet / gasket", "Rubber gasket", "Spiral wound gasket", "O-ring", "Gland packing", "Thread sealant", "Industrial adhesive", "Lubricant / grease", "Abrasive disc / cutting wheel", "Welding rods / electrodes"],
+    "Details to specify": ["Material and grade", "Diameter, length, thread and standard", "Temperature / chemical service if relevant", "Quantity and packaging", "Required brand or equivalent"]
+  },
+  "Industrial Safety Products": {
+    "Personal protective equipment (PPE)": ["Safety helmet", "Safety goggles", "Face shield", "Safety spectacles", "Cut-resistant gloves", "Chemical-resistant gloves", "Welding gloves", "Safety shoes", "Safety gumboots", "Coverall / boiler suit", "Reflective jacket", "Ear plugs / ear muffs", "Respirator / cartridge (specify hazard)"],
+    "Site safety equipment": ["Safety harness / lanyard", "Fall protection accessories", "Fire extinguisher", "Spill kit", "Safety signs / boards", "Barricade tape", "First-aid kit", "Lockout / tagout accessories", "Gas detector (specify gas)"],
+    "Details to specify": ["Size and quantity", "Hazard / application", "Required standard / certification", "Disposable or reusable", "Delivery location and date"]
+  }
+};
+
+document.querySelectorAll(".service-card").forEach(card => {
+  const title = card.querySelector("h3")?.textContent.trim();
+  const groups = itemCatalogue[title];
+  if (!groups) return;
+  const picker = document.createElement("details");
+  picker.className = "item-picker";
+  const summary = document.createElement("summary");
+  summary.textContent = "☑ View & tick item details";
+  picker.appendChild(summary);
+  const body = document.createElement("div");
+  body.className = "picker-body";
+  Object.entries(groups).forEach(([groupName, items]) => {
+    const heading = document.createElement("div");
+    heading.className = "item-group-title";
+    heading.textContent = groupName;
+    body.appendChild(heading);
+    items.forEach(item => {
+      const label = document.createElement("label");
+      label.className = "item-option";
+      const checkbox = document.createElement("input");
+      checkbox.type = "checkbox";
+      checkbox.value = item;
+      checkbox.dataset.service = title;
+      checkbox.addEventListener("change", () => {
+        serviceSelect.value = title;
+        const selected = [...document.querySelectorAll('.item-picker input[type="checkbox"]:checked')]
+          .filter(input => input.dataset.service === title)
+          .map(input => input.value);
+        document.getElementById("itemName").value = selected.join(", ");
+        document.getElementById("enquiry").scrollIntoView({behavior:"smooth", block:"nearest"});
+      });
+      const text = document.createElement("span");
+      text.textContent = item;
+      label.append(checkbox, text);
+      body.appendChild(label);
+    });
+  });
+  const hint = document.createElement("p");
+  hint.className = "select-hint";
+  hint.textContent = "Tick one or more items. Your selection will be added to the enquiry form. These are catalogue examples; confirm availability and specifications before ordering.";
+  body.appendChild(hint);
+  picker.appendChild(body);
+  const firstButton = card.querySelector(".choose-service");
+  card.querySelector(".service-content").insertBefore(picker, firstButton);
+});
+
+
+serviceButtons.forEach(button=>{
+  button.addEventListener('click',()=>{
+    serviceSelect.value=button.dataset.service;
+    document.getElementById('enquiry').scrollIntoView({behavior:'smooth'});
+    document.getElementById('itemName').focus({preventScroll:true});
+    statusBox.style.display='none';
+    emailActions.style.display='none';
+  });
+});
+
+form.addEventListener('submit',function(e){
+  e.preventDefault();
+  if(!form.reportValidity()) return;
+  const val=id=>document.getElementById(id).value.trim();
+  const customer=val('customer'), phone=val('phone'), email=val('email');
+  const location=val('location'), service=val('service'), details=val('details');
+  const itemName=val('itemName'), quantity=val('quantity');
+  const requiredDate=val('requiredDate'), specLink=val('specLink');
+  const body=`Hello NK ENTERPRISES VAPI,
+
+I would like to enquire about your products/services.
+
+Customer / Company: ${customer}
+Mobile: ${phone}
+Email: ${email || 'Not provided'}
+Location: ${location || 'Not provided'}
+Service: ${service}
+Item / Product: ${itemName || 'Not specified'}
+Quantity / Area / Manpower: ${quantity || 'Not specified'}
+Required By: ${requiredDate || 'Not specified'}
+Technical Requirements: ${details}
+Specification / Drawing Link: ${specLink || 'Not provided'}
+
+Please contact me with availability, technical clarification and quotation.`;
+  emailButton.href='mailto:nkenterprises.vapi@gmail.com?subject='+encodeURIComponent('Customer Enquiry - '+service)+'&body='+encodeURIComponent(body);
+  statusBox.textContent='Demo enquiry preview ready for: '+service+'. Review the details, then choose “Open Email to Send”. This page has not sent or stored your enquiry.';
+  statusBox.style.display='block';
+  emailActions.style.display='flex';
+});
+resetButton.addEventListener('click',function(){
+  form.reset();
+  document.getElementById('location').value='Vapi, Gujarat';
+  statusBox.style.display='none';
+  emailActions.style.display='none';
+});
+</script>
+</body>
+</html>
